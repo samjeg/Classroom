@@ -1,1 +1,45 @@
-$primary-color: #bada55;
+@import 'variables';
+@import 'base';
+@import 'headings';
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+header {
+  background-color: $primary-color;
+}
+
+footer {
+  background-color: $secondary-color;
+}
+
+ul {
+  li {
+    a {
+      color: $link-color;
+    }
+  }
+}
+
+.card {
+  background-color: lime;
+  padding: 2%;
+  width: 30%;
+  @include border-radius(10px);
+}
+
+.box {
+  background-color: purple;
+  padding: 2%;
+  width: 30%;
+  @include border-radius(4px);
+  @extend %big-size;
+}
+
+%big-size {
+  border: 5px solid orange;
+  width: 60%;
+}
