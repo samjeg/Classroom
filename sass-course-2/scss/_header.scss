@@ -1,0 +1,17 @@
+header {
+	background-color: $color-gray;
+	padding: 0.5rem 1rem;
+}
+
+nav {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	color: $color-red;
+	font-size: 1.6rem;
+	font-weight: bold;
+	text-decoration: none;
+}
